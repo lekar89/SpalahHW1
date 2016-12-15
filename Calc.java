@@ -14,7 +14,7 @@ public class Calc {
             double res = 0;
             String[] splits = str.split(" ");
 
-            if (splits[0] != "-" | splits[0] != "+" | splits[0] != "*" | splits[0] != "/") {
+            if (splits[0].equals( "-") | splits[0] != "+" | splits[0] != "*" | splits[0] != "/") {
                 double a = Double.parseDouble(splits[0]);
                 char mark = splits[1].charAt(0);
                 double b = Double.parseDouble(splits[2]);
@@ -27,7 +27,7 @@ public class Calc {
             System.out.println("Result= " + res);
 
         }
-        
+        //////////////sadacascascaca
         while (str=="exit");
 
     }
