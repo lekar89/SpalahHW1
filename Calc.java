@@ -34,7 +34,7 @@ public class Calc {
 
     }
   //  new LocalDate()
-
+//
      private static double calc(double a, double b, char mark) {
         double res=0;
         switch (mark) {
