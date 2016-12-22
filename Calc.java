@@ -1,10 +1,12 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
-/**
- * Created by Влад on 15.12.2016.
- */
+
 public class Calc {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         String str =
                 scanner.nextLine();
@@ -14,7 +16,7 @@ public class Calc {
             double res = 0;
             String[] splits = str.split(" ");
 
-            if (splits[0].equals( "-") | splits[0] != "+" | splits[0] != "*" | splits[0] != "/") {
+            if (!splits[0].equals( "-") | splits[0].equals( "+") | splits[0].equals( "/") | splits[0].equals( "*")) {
                 double a = Double.parseDouble(splits[0]);
                 char mark = splits[1].charAt(0);
                 double b = Double.parseDouble(splits[2]);
@@ -28,11 +30,12 @@ public class Calc {
 
         }
         //////////////sadacascascaca
-        while (str=="exit");
+        while (str.equals("exit"));
 
     }
+  //  new LocalDate()
 
-    public static double calc(double a,double b ,char mark) {
+     private static double calc(double a, double b, char mark) {
         double res=0;
         switch (mark) {
             case '+':
